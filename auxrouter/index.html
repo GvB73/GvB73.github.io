@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AuxRouter Support</title>
+<meta name="description" content="Help and contact for AuxRouter, a Mac menu bar app that routes stereo audio to extra outputs.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+<header class="app"><img src="icon.png" alt="AuxRouter app icon"><div><h1>AuxRouter Support</h1><p class="lead">Send your Mac's stereo audio to extra speakers.</p></div></header>
+<nav class="top"><a href="privacy/">Privacy policy</a><a href="nl/">Nederlands</a></nav>
+<h2>Contact</h2>
+<p>Questions or problems? Email <a href="mailto:EMAIL-ADRES-HIER">EMAIL-ADRES-HIER</a>. I usually reply within two working days.</p>
+<h2>What you need</h2>
+<ul><li>An audio interface with 4 or more outputs</li><li>macOS 15.6 or later</li></ul>
+<h2>First-time setup</h2>
+<ol>
+<li>Select your interface as the sound output: System Settings → Sound → Output. Or hold Option and click the volume icon in the menu bar.</li>
+<li>Click the AuxRouter icon in the menu bar and choose your interface under <strong>Interface</strong>.</li>
+<li>Switch <strong>Routing on</strong>.</li>
+<li>macOS asks for permission to record system audio. Click <strong>Allow</strong>. AuxRouter uses this only to route the audio; nothing is recorded or stored.</li>
+<li>Play something. Outputs 1 and 2 carry left and right; the aux outputs carry whatever you set there.</li>
+</ol>
+<h2>The aux outputs</h2>
+<table>
+<tr><th>Setting</th><th>What it does</th></tr>
+<tr><td>Name</td><td>Click the name to change it, for example "Sub" or "Kitchen"</td></tr>
+<tr><td>Source</td><td>Off, L only, R only, or mono sum (L+R)</td></tr>
+<tr><td>Output</td><td>Which output of your interface it goes to, Out 3 and up</td></tr>
+<tr><td>Volume</td><td>From −∞ (off) to +6 dB</td></tr>
+<tr><td>Delay</td><td>0 to 50 ms, to time-align a sub or a distant speaker</td></tr>
+<tr><td>Invert polarity</td><td>Flips the phase 180°; useful when sub and speakers cancel each other out</td></tr>
+</table>
+<h3>Tips</h3>
+<ul>
+<li><strong>Subwoofer with one input:</strong> source Mono sum. The mono sum is 6 dB lower to prevent clipping; raise the volume if needed.</li>
+<li><strong>Subwoofer with L and R inputs:</strong> Aux A on L only to Out 3, Aux B on R only to Out 4.</li>
+<li>If A and B use the same output, they are added together.</li>
+<li>AuxRouter has no low-pass filter for the sub; set that on the sub itself.</li>
+</ul>
+<h2>Troubleshooting</h2>
+<table>
+<tr><th>Problem</th><th>Solution</th></tr>
+<tr><td>My interface is not in the list</td><td>Only interfaces with 4 or more outputs are shown. Connect it and click Refresh devices.</td></tr>
+<tr><td>Orange message about the system output</td><td>Select your interface as the sound output in System Settings → Sound.</td></tr>
+<tr><td>No sound on the aux outputs</td><td>Check the source (not Off), the volume (not −∞) and the permission in System Settings → Privacy &amp; Security.</td></tr>
+<tr><td>Everything is silent</td><td>Check whether Mute is on. Quitting AuxRouter always gives you the normal macOS sound back.</td></tr>
+<tr><td>Sub sounds thin or hollow</td><td>Try Invert polarity and adjust the delay.</td></tr>
+</table>
+<h2>Uninstalling</h2>
+<p>Quit AuxRouter from its menu and drag the app to the Trash. No drivers or other files are left behind.</p>
+<footer>© 2026 Bart van Geldrop · <a href="../">Apps</a></footer>
+</main>
+</body>
+</html>
